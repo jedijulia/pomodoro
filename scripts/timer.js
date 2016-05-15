@@ -14,10 +14,10 @@ var states = [
 var currentState = states[0];
 var currentTime = states[0].duration;
 setInterval(updateTime, 1000);
-displayTime(currentTime);
+displayTime(currentTime, currentState);
 
 function updateTime() {
-    displayTime(currentTime);
+    displayTime(currentTime, currentState);
     if (currentTime !== 0) {
         currentTime -= 1;
     } else {
@@ -27,8 +27,10 @@ function updateTime() {
     }
 }
 
-function displayTime(time) {
-    document.querySelector('time').textContent = formatTime(time);
+function displayTime(time, state) {
+    var timeElement = document.querySelector('time');
+    timeElement.textContent = formatTime(time);
+    timeElement.setAttribute('class', state.className);
 }
 
 function formatTime(time) {

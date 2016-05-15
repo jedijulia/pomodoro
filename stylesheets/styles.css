@@ -20,5 +20,12 @@ body {
 time {
     font-family: 'Source Code Pro';
     font-size: 48px;
+}
+
+.work {
     color: #009688;
+}
+
+.rest {
+    color: #F06292;
 }
