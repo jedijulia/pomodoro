@@ -1,0 +1,16 @@
+{
+  "name": "pomodoro",
+  "version": "0.0.0",
+  "description": "a pomodoro app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pomodoro",
+    "productivity",
+    "timer"
+  ],
+  "author": "Julia Menchavez <jcmenchavez@gmail.com> (github.com/jedijulia)",
+  "license": "MIT"
+}
